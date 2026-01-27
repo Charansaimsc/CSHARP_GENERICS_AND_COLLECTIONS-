@@ -168,13 +168,15 @@ The emphasis is on **efficient data handling, traversal, modification, and edge-
 
 ## 📁 Collections – Folder Structure
 
-``text
+```
 collections/
 ├── List/
 ├── Set/
 ├── Queue/
 ├── Map/
 └── Collections_Extra_Questions/
+```
+
 ## 📂 List – Practice
 
 ### 1️⃣ List Operations Practice
