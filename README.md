@@ -176,108 +176,332 @@ collections/
 ├── Map/
 └── Collections_Extra_Questions/
 ```
+## 📂 List
 
-## 📂 List – Practice
+Problems based on the `List` collection focusing on **order preservation, traversal, and manipulation**.
 
-### 1️⃣ List Operations Practice
+---
+
+### 1️⃣ Reverse a List
 
 **Problem Statement:**  
-Implement common list-based problems focusing on traversal, order preservation, and element manipulation.
+Reverse the elements of a list without using built-in reverse methods.
+
+**Collections Used:**
+- `List<int>`
+
+**Tasks:**
+- Traverse the list manually  
+- Reverse elements in-place  
+
+**Edge Cases:**
+- Empty list  
+- Single element list  
+
+---
+
+### 2️⃣ Rotate Elements in a List
+
+**Problem Statement:**  
+Rotate the elements of a list by N positions.
+
+**Collections Used:**
+- `List<int>`
+
+**Tasks:**
+- Rotate left or right by N  
+- Handle N greater than list size  
+
+**Edge Cases:**
+- N = 0  
+- N > list size  
+
+---
+
+### 3️⃣ Remove Duplicates While Preserving Order
+
+**Problem Statement:**  
+Remove duplicate elements from a list while maintaining the original order.
+
+**Collections Used:**
+- `List<int>`
+- `HashSet<int>`
+
+**Tasks:**
+- Track visited elements  
+- Preserve insertion order  
+
+**Edge Cases:**
+- All elements duplicate  
+- No duplicates  
+
+---
+
+### 4️⃣ Find Nth Element From End
+
+**Problem Statement:**  
+Find the Nth element from the end of a list without using the `Count` property.
+
+**Collections Used:**
+- `List<int>`
+
+**Tasks:**
+- Use two-pointer technique  
+
+**Edge Cases:**
+- N greater than list size  
+- Empty list  
+
+---
+
+### 5️⃣ Frequency of Elements in a List
+
+**Problem Statement:**  
+Count the frequency of each element in a list.
 
 **Collections Used:**
 - `List<int>`
 - `Dictionary<int, int>`
 
 **Tasks:**
-- Reverse a list without using built-in reverse methods  
-- Rotate elements of a list by N positions  
-- Remove duplicates while preserving order  
-- Find the Nth element from the end of the list  
-- Find frequency of elements using a dictionary  
+- Traverse list  
+- Maintain frequency map  
 
 **Edge Cases:**
 - Empty list  
-- Single element list  
-- N greater than list size  
-- Duplicate values  
-- Large list size  
+- All elements same
+---
+
+## 📂 Set
+
+Problems based on the `Set` collection focusing on **uniqueness, comparison, and set operations**.
 
 ---
 
-## 📂 Set – Practice
-
-### 2️⃣ Set Operations Practice
+### 1️⃣ Check Equality of Two Sets
 
 **Problem Statement:**  
-Perform set-based operations emphasizing uniqueness, comparison, and mathematical set logic.
+Check whether two sets contain the same elements.
 
 **Collections Used:**
 - `HashSet<int>`
-- `SortedSet<int>`
 
 **Tasks:**
-- Check whether two sets are equal  
-- Find union and intersection of two sets  
-- Compute symmetric difference  
-- Convert a set into a sorted list  
-- Check if one set is a subset of another  
+- Compare elements ignoring order  
 
 **Edge Cases:**
 - Empty sets  
-- Identical sets  
-- One set fully contained in another  
-- Duplicate input values  
-- Large data sets  
+- Different sizes  
 
 ---
 
-## 📂 Queue – Practice
-
-### 3️⃣ Queue Operations Practice
+### 2️⃣ Union and Intersection of Sets
 
 **Problem Statement:**  
-Implement queue-based solutions demonstrating FIFO behavior and priority-based processing.
+Find the union and intersection of two sets.
+
+**Collections Used:**
+- `HashSet<int>`
+
+**Tasks:**
+- Compute union  
+- Compute intersection  
+
+**Edge Cases:**
+- No common elements  
+- One empty set  
+
+---
+
+### 3️⃣ Symmetric Difference
+
+**Problem Statement:**  
+Find elements present in either set but not in both.
+
+**Collections Used:**
+- `HashSet<int>`
+
+**Tasks:**
+- Remove common elements  
+
+**Edge Cases:**
+- Identical sets  
+- One empty set  
+
+---
+
+### 4️⃣ Convert Set to Sorted List
+
+**Problem Statement:**  
+Convert a set into a sorted list.
+
+**Collections Used:**
+- `HashSet<int>`
+- `List<int>`
+
+**Tasks:**
+- Transfer elements  
+- Sort list  
+
+**Edge Cases:**
+- Empty set  
+
+---
+
+### 5️⃣ Subset Check
+
+**Problem Statement:**  
+Check whether one set is a subset of another.
+
+**Collections Used:**
+- `HashSet<int>`
+
+**Tasks:**
+- Validate containment  
+
+**Edge Cases:**
+- Same sets  
+- Empty subset  
+
+---
+
+## 📂 Queue
+
+Problems based on the `Queue` collection focusing on **FIFO processing and priority handling**.
+
+---
+
+### 1️⃣ Reverse a Queue
+
+**Problem Statement:**  
+Reverse the elements of a queue using only queue operations.
 
 **Collections Used:**
 - `Queue<int>`
-- `PriorityQueue<int, int>`
+- `Stack<int>`
 
 **Tasks:**
-- Reverse a queue using only queue operations  
-- Generate first N binary numbers using a queue  
-- Implement a hospital triage system using a priority queue  
+- Dequeue and push into stack  
+- Re-enqueue elements  
 
 **Edge Cases:**
 - Empty queue  
-- Single element queue  
-- Priority tie cases  
-- Large N values  
-- Queue underflow  
+- Single element  
 
 ---
 
-## 📂 Map (Dictionary) – Practice
-
-### 4️⃣ Dictionary Operations Practice
+### 2️⃣ Generate First N Binary Numbers
 
 **Problem Statement:**  
-Solve key–value based problems using dictionaries for efficient lookup, grouping, and aggregation.
+Generate the first N binary numbers using a queue.
+
+**Collections Used:**
+- `Queue<string>`
+
+**Tasks:**
+- Generate binary numbers iteratively  
+
+**Edge Cases:**
+- N = 0  
+- N = 1  
+
+---
+
+### 3️⃣ Hospital Triage System
+
+**Problem Statement:**  
+Serve patients based on priority using a priority queue.
+
+**Collections Used:**
+- `PriorityQueue<Patient, int>`
+
+**Tasks:**
+- Assign priorities  
+- Serve highest priority first  
+
+**Edge Cases:**
+- Same priority patients  
+- No patients  
+
+---
+
+## 📂 Map (Dictionary)
+
+Problems based on the `Dictionary` collection focusing on **key–value mapping and efficient lookups**.
+
+---
+
+### 1️⃣ Word Frequency Counter
+
+**Problem Statement:**  
+Count the frequency of words in a given text.
 
 **Collections Used:**
 - `Dictionary<string, int>`
-- `Dictionary<int, List<string>>`
 
 **Tasks:**
-- Count word frequency from text input  
-- Invert a dictionary to map values to multiple keys  
+- Split text into words  
+- Normalize and count occurrences  
 
 **Edge Cases:**
 - Empty input  
-- Case-sensitive keys  
-- Duplicate keys  
-- Null or missing values  
-- Large input size  
+- Case sensitivity  
+
 ---
+
+### 2️⃣ Invert a Dictionary
+
+**Problem Statement:**  
+Invert a dictionary to map values to multiple keys.
+
+**Collections Used:**
+- `Dictionary<K, V>`
+- `Dictionary<V, List<K>>`
+
+**Tasks:**
+- Group keys by value  
+
+**Edge Cases:**
+- Duplicate values  
+- Empty dictionary  
+
+---
+
+### 3️⃣ Key-Based Lookup System
+
+**Problem Statement:**  
+Retrieve values efficiently using keys.
+
+**Collections Used:**
+- `Dictionary<int, string>`
+
+**Tasks:**
+- Insert key–value pairs  
+- Fetch values safely  
+
+**Edge Cases:**
+- Missing keys  
+- Null values  
+
+---
+
+### 4️⃣ Group Elements by Category
+
+**Problem Statement:**  
+Group elements based on a common key.
+
+**Collections Used:**
+- `Dictionary<string, List<string>>`
+
+**Tasks:**
+- Group related elements  
+
+**Edge Cases:**
+- Empty groups  
+- Single category  
+
+---
+
 
 ## 👤 Author
 
